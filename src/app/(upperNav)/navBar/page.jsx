@@ -1,19 +1,24 @@
-import Image from "next/image";
+
+
+import { CiSearch } from "react-icons/ci";
 
 const NavBar = () => {
   return (
-    <section className="container mx-auto mt-6">
+    <section className="container mx-auto mt-8">
       <div className="flex justify-between">
         <div>
-          <div>
-            <input className="outline outline-1 rounded-sm w-[23rem] " type="text" />
+          <div className="flex items-center">
+            <input
+              className="outline outline-1 w-[23rem] rounded-l p-1"
+              type="text"
+            />
             <label htmlFor="search">
-              <Image/>
+              <CiSearch className="text-2xl bg-grayCol outline outline-1 w-[4rem] text-textCol rounded-r h-[2rem] " />
             </label>
           </div>
         </div>
         <div>
-          <ul className="flex gap-8 items-center">
+          <ul className="flex gap-8 items-center text-xl capitalize font-semibold  ">
             <li>
               <a href="/">home</a>
             </li>

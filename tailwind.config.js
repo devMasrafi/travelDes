@@ -18,8 +18,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        mainCol: "#EC8305",
+        textCol: "#12151E",
+        grayCol: "#DBD3D3",
       },
     },
   },
