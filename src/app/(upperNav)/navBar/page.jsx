@@ -1,4 +1,4 @@
-
+'use client'
 
 import { useTheme } from "@/context/ThemeContext";
 import Link from "next/link";
