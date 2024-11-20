@@ -1,8 +1,8 @@
 'use client'
 
 import Image from "next/image";
-import logoImg from "@/public/images/TravelDes.svg";
-import logoImglight from "@/public/images/TravelDesLight.svg";
+import logoImg from "/public/images/Travel Des.svg";
+import logoImglight from "/public/images/TravelDesLight.svg";
 import { useTheme } from "@/context/ThemeContext";
 
 import { FaSun } from "react-icons/fa";
