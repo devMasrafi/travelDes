@@ -1,5 +1,6 @@
 
 
+import Link from "next/link";
 import { CiSearch } from "react-icons/ci";
 
 const NavBar = () => {
@@ -20,22 +21,22 @@ const NavBar = () => {
         <div>
           <ul className="flex gap-8 items-center text-xl capitalize font-semibold  ">
             <li>
-              <a href="/">home</a>
+              <Link href="/">home</Link>
             </li>
             <li>
-              <a href="/about">about</a>
+              <Link href="/about">about</Link>
             </li>
             <li>
-              <a href="/destination">destination</a>
+              <Link href="/destination">destination</Link>
             </li>
             <li>
-              <a href="/tourPackege">tour packege</a>
+              <Link href="/tourPackege">tour packege</Link>
             </li>
             <li>
-              <a href="/news">news</a>
+              <Link href="/news">news</Link>
             </li>
             <li>
-              <a href="/contact">contact</a>
+              <Link href="/contact">contact</Link>
             </li>
           </ul>
         </div>
