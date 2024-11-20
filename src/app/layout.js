@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
     document.documentElement.setAttribute("data-theme", savedTheme);
 
     // Hide loading screen
-    const timer = setTimeout(() => setIsLoading(false), 500);
+    const timer = setTimeout(() => setIsLoading(false), 1000);
     return () => clearTimeout(timer); 
   }, []);
 

@@ -19,8 +19,9 @@ module.exports = {
     extend: {
       colors: {
         mainCol: "#EC8305",
-        textCol: "#12151E",
-        grayCol: "#DBD3D3",
+        orrangeCol: "#F26F55",
+        grayCol: "#24292F",
+
       },
     },
   },
