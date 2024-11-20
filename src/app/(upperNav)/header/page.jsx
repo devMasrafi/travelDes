@@ -1,9 +1,10 @@
 import Image from "next/image";
 import logoImg from "@/public/images/TravelDes.svg";
+import { useTheme } from "@/context/ThemeContext";
 
 
 const Header = () => {
-
+  const { theme, toggleTheme } = useTheme();
   return (
     <section className="container mx-auto mt-4 mb-4">
       <div className="flex justify-between">
@@ -17,6 +18,11 @@ const Header = () => {
         <div className="flex gap-2 items-center capitalize ">
           <div>sign up</div>
           <div>sign in</div>
+          <div>
+          <button onClick={toggleTheme}>
+        Switch to {theme === 'light' ? 'Dark' : 'Light'} Theme
+      </button>
+          </div>
         </div>
       </div>
     </section>
