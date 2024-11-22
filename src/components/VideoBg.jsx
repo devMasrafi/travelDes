@@ -22,12 +22,12 @@ export const VideoBg = () => {
             <div className="flex justify-between drop-shadow-[0_15px_15px_rgba(0,0,0,0.30)]">
               <div className="w-[40%] text-white">
                 <h2 className=" font-bold text-5xl pb-3">
-                  The World's Best Travel Spots
+                  The World&#39;s Best Travel Spots
                 </h2>
                 <p className="text-lg tracking-wide ">
                   Lorem ipsum dolor sit amet consectetur. Platea urna hendrerit
                   dui eget velit sollicitudin orci. Non sit lorem dolor placerat
-                  faucibus. Ut tellus fewow fadeInUp" sugiat facilisi neque
+                  faucibus. Ut tellus fewow fadeInUp sugiat facilisi neque
                   sagittis cursus sagittis.
                 </p>
               </div>
