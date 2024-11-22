@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body>
+      <body className="font-fontRoboto">
         <ThemeProvider>
           <Header />
           <NavBar />

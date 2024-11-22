@@ -1,5 +1,6 @@
 'use client'
 
+import { SearchBar } from "@/components/SearchBar";
 import { useTheme } from "@/context/ThemeContext";
 import Link from "next/link";
 import { CiSearch } from "react-icons/ci";
@@ -11,17 +12,7 @@ const NavBar = () => {
     <section className="container mx-auto mt-8">
       <div className="flex justify-between items-center">
         <div>
-          <div className={`flex items-center px-3 py-1 rounded-2xl ${ theme == 'light' ? 'bg-orrangeCol' :'bg-grayCol'}  `}>
-            <input
-            // style change based on theme
-              className={`w-[15rem] rounded-2xl p-1  outline-none text-white placeholder:text-white ${theme == 'light'? 'bg-orrangeCol' : 'bg-grayCol'}`}
-              type="text"
-              placeholder="search here"
-            />
-            <label htmlFor="search">
-              <CiSearch className="text-2xl  w-[4rem] text-white h-[2rem] " />
-            </label>
-          </div>
+          <SearchBar/>
         </div>
         <div>
           <ul className="flex gap-8 items-center text-xl capitalize font-medium  ">

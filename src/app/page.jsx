@@ -1,4 +1,5 @@
 import { VideoBg } from "@/components/VideoBg";
+import Image from "next/image";
 
 const Home = () => {
   return (
@@ -9,7 +10,7 @@ const Home = () => {
         </div>
         <div>
           <div>
-            <h3>plan your dream location in just a click</h3>
+            
           </div>
         </div>
       </div>
