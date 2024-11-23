@@ -1,21 +1,36 @@
-'use client'
+"use client";
 
 import { SearchBar } from "@/components/SearchBar";
 import { useTheme } from "@/context/ThemeContext";
 import Link from "next/link";
-import { CiSearch } from "react-icons/ci";
+import { useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const NavBar = () => {
-  const {theme, toogleTheme} = useTheme()
-  
+  const { theme, toogleTheme } = useTheme();
+  const [navToggle, setNavToggle] = useState(false);
+
+  const onToggleHandler = () => {
+    setNavToggle(true);
+  };
+
   return (
     <section className="container mx-auto mt-8">
-      <div className="flex justify-between items-center">
-        <div>
-          <SearchBar/>
+      <div className="sm:px-1 lg:px-0 flex justify-between items-center">
+        <div className="relative w-full flex justify-between items-center">
+          <div>
+            <div className="sm:absolute lg:relative top-[-0.4rem] lg:top-[0.2rem]  ">
+              <SearchBar />
+            </div>
+          </div>
+          <div className="sm:text-3xl lg:hidden">
+            <GiHamburgerMenu />
+          </div>
         </div>
-        <div>
-          <ul className="flex gap-8 items-center text-xl capitalize font-medium  ">
+
+        {/* navigation pages */}
+        <div className="sm:hidden lg:block ">
+          <ul className="lg:flex gap-x-4 items-center lg:text-lg xl:text-xl capitalize font-medium whitespace-nowrap">
             <li>
               <Link href="/">home</Link>
             </li>
